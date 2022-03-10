@@ -1,1 +1,16 @@
+
 print("Bienvenido al Salón de juegos Los del Fondo")
+print("¿A qué quieres jugar hoy?")
+print("1. Ir al casino")
+print("2. Jugar al piedra, pael, tijera")
+print("3. Jugar al ahorcado")
+
+númerojuego = int(input("Escribe el número de lo que quieras hacer: "))
+
+if númerojuego == 1:
+    
+if númerojuego == 2:
+
+if númerojuego == 3:
+    
+
