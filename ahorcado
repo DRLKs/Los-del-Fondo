@@ -73,7 +73,7 @@ def displayBoard(AHORCADO, letraIncorrecta, letraCorrecta, palabraSecreta):
     print ("")
  
 def elijeLetra(algunaLetra):
-    # Devuelve la letra que el jugador ingreso. Esta función hace que el jugador ingrese una letra y no cualquier otra cosa
+    # Devuelve la letra que el jugador haya introducido. Esta función hace que el jugador introduzca una letra y no cualquier otra cosa
     while True:
         print ('Adivina una letra:')
         letra = input()
@@ -83,13 +83,13 @@ def elijeLetra(algunaLetra):
         elif letra in algunaLetra:
             print ('Ya has elegido esa letra ¿Qué tal si pruebas con otra?')
         elif letra not in 'abcdefghijklmnopqrstuvwxyz':
-            print ('Elije una letra.')
+            print ('Elige una letra.')
         else:
             return letra
  
 def empezar():
     # Esta funcion devuelve True si el jugador quiere volver a jugar, de lo contrario devuelve False
-    print ('Quieres jugar de nuevo? (Si o No)')
+    print ('¿Quieres jugar de nuevo? (Si o No)')
     return input().lower().startswith('s')
  
 print ('A H O R C A D O')
@@ -99,8 +99,8 @@ palabraSecreta = buscarPalabraAleat(palabras)
 finJuego = False
 while True:
     displayBoard(AHORCADO, letraIncorrecta, letraCorrecta, palabraSecreta)
-    # El usuairo elije una letra.
-    letra = elijeLetra(letraIncorrecta + letraCorrecta)
+    # El usuairo elige una letra.
+    letra = eligeLetra(letraIncorrecta + letraCorrecta)
     if letra in palabraSecreta:
         letraCorrecta = letraCorrecta + letra
         # Se fija si el jugador ganó
