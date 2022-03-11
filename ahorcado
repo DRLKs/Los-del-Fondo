@@ -1,3 +1,6 @@
+print("Bienvenido al juego del ahorcado!")
+print("Intente adivinar la palabra para salvar al muñeco!")
+
 import random
 AHORCADO = ['''
       +---+
