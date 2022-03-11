@@ -1,16 +1,27 @@
 
+
 print("Bienvenido al Salón de juegos Los del Fondo")
-print("¿A qué quieres jugar hoy?")
-print("1. Ir al casino")
-print("2. Jugar al piedra, pael, tijera")
-print("3. Jugar al ahorcado")
-
-númerojuego = int(input("Escribe el número de lo que quieras hacer: "))
-
-if númerojuego == 1:
+edad = int(input("¿Cuántos años tienes?"))
+if edad < 18:
+    print("1. Jugar al piedra, papel, tijera")
+    print("2. Jugar al ahorcado")
+    númerojuego = int(input("Escribe el número de lo que quieras hacer: "))
     
-if númerojuego == 2:
+if edad == 18 or edad > 18:
+    print("1.Zona infantil")
+    print("2.Casino")
+    elegirzona = int("Elige a donde quieres, escribiendo el número de lo que quieres hacer")
+    if elegirzona == 1:
+        print("1. Jugar al piedra, papel, tijera")
+        print("2. Jugar al ahorcado")
+        númerojuego = int(input("Escribe el número de lo que quieras hacer: "))
+        if númerojuego == 1:
+            
+        if númerojuego == 2:
+    if elegirzona == 2:
+        
 
-if númerojuego == 3:
+
+
     
 
