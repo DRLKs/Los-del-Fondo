@@ -49,7 +49,7 @@ AHORCADO = ['''
      / \  |
           |
     =========''']
-palabras = 'valoracion aprenderpython comida juego python web imposible variable curso volador cabeza reproductor mirada escritor billete lapicero celular valor revista gratuito disco voleibol anillo estrella'.split()
+palabras = ' futbol valoracion aprenderpython comida juego python web imposible variable curso volador cabeza reproductor mirada escritor billete lapicero celular valor revista gratuito disco voleibol anillo estrella'.split()
  
 def buscarPalabraAleat(listaPalabras):
     # Esta funcion retorna una palabra aleatoria.
@@ -72,7 +72,7 @@ def displayBoard(AHORCADO, letraIncorrecta, letraCorrecta, palabraSecreta):
         print (letra, fin)
     print ("")
  
-def elijeLetra(algunaLetra):
+def eligeLetra(algunaLetra):
     # Devuelve la letra que el jugador haya introducido. Esta función hace que el jugador introduzca una letra y no cualquier otra cosa
     while True:
         print ('Adivina una letra:')
@@ -99,7 +99,7 @@ palabraSecreta = buscarPalabraAleat(palabras)
 finJuego = False
 while True:
     displayBoard(AHORCADO, letraIncorrecta, letraCorrecta, palabraSecreta)
-    # El usuairo elige una letra.
+    # El usuario elige una letra.
     letra = eligeLetra(letraIncorrecta + letraCorrecta)
     if letra in palabraSecreta:
         letraCorrecta = letraCorrecta + letra
