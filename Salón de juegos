@@ -4,7 +4,7 @@ edad = int(input("¿Cuántos años tienes?"))
 if edad < 18:
     print("1. Jugar al piedra, papel, tijera")
     print("2. Jugar al ahorcado")
-    numerojuego = int(input("Escribe el número de lo que quieras hacer: "))
+    numerojuego = int(input("Elige el juego al que quieres jugar!: "))
     if numerojuego == 2:
         print("Bienvenido al juego del ahorcado!")
         print("Intente adivinar la palabra para salvar al muñeco!")
@@ -140,7 +140,7 @@ if edad < 18:
                 else:
                     break
     if numerojuego == 1:
-        print("Bienvenido a el juego de piedra, papel o tijera para los menores de 18 años. ")
+        print("Bienvenido a el juego de piedra, papel o tijera! ")
         print("Para este juego tendrás que elegir una de estas opciones:")
         import random
         aleatorio = random.randrange(0, 3)
@@ -148,7 +148,7 @@ if edad < 18:
         print("1)Piedra")
         print("2)Papel")
         print("3)Tijera")
-        opcion = int(input("Que eliges: "))
+        opcion = int(input("Que eliges?: "))
         
         if opcion == 1:
             eligeUsuario = "piedra"
@@ -366,7 +366,7 @@ if edad == 18 or edad > 18:
         
         main()
     if elegirzona ==1:
-        print("Bienvenido al juego del BlackJack en inglés!")
+        print("Bienvenido al BlackJack en inglés!")
         import random, os, sys
 
         cardName = { 1: 'Ace', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 10: 'Ten', 11: 'Jack', 12: 'Queen', 13: 'King' }
